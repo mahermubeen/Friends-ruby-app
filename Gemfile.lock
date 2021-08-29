@@ -222,7 +222,11 @@ DEPENDENCIES
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)
   rails (~> 6.1.4, >= 6.1.4.1)
+<<<<<<< HEAD
   rails_12factor
+=======
+  rails_12factor (~> 0.0.3)
+>>>>>>> bdafb8d62d7e4ba252bfe8359903dcd4a5c03c0b
   sass-rails (>= 6)
   selenium-webdriver
   turbolinks (~> 5)
