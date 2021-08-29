@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: friends
+  host: localhost
+  port: 5432
+  user: postgres
+  password: mubeen
+
+test:
+  <<: *default
+  database: friends
+  host: localhost
+  port: 5432
+  user: postgres
+  password: mubeen
+  
+production:
+  <<: *default
+  url: <%= ENV['MY_APP_DATABASE_URL'] %>
+  # database: friends_ruby_production
+  # username: friends_ruby
+  # password: <%= ENV['FRIENDS_RUBY_DATABASE_PASSWORD'] %>
