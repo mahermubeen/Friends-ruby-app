@@ -20,5 +20,3 @@ module FriendsRuby
     # config.eager_load_paths << Rails.root.join("extras")
   end
 end
-
-config.assets.initialize_on_precompile = false
