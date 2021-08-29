@@ -20,6 +20,11 @@ end
 group :development do
   gem 'web-console', '>= 4.1.0'
   gem 'rack-mini-profiler', '~> 2.0'
+  gem 'pg', '~> 1.1'
+end
+
+group :production do
+  gem 'pg', '~> 1.1'
 end
 
 group :test do
